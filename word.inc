@@ -502,7 +502,6 @@ main_loop:
 
     .number:
       dq xt_drop
-      ;dq xt_buffer
       dq xt_parsei
       branch0 .warn
       dq xt_wasbranch
@@ -530,7 +529,6 @@ main_loop:
 
     .interpret_number:
       dq xt_drop
-      ;dq xt_buffer
       dq xt_parsei
       branch0 .warn
       branch main_loop
