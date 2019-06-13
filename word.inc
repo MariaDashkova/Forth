@@ -377,6 +377,10 @@ native 'read', read
   push rdx
   jmp next
 
+native 'save_lw', save_lw
+  push last_word
+  jmp next  
+
 native 'prints', prints
   pop rdi
   call print_string
